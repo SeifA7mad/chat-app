@@ -79,19 +79,27 @@
 @media (min-width: 500px) {
   .rw-widget-embedded .rw-conversation-container {
     width: 100%;
+    min-width: 35rem;
     height: 45rem;
   }
 }
-
 @media (min-width: 900px) {
   .chatbot-full-avatar-div {
     display: flex;
   }
   .rw-widget-embedded .rw-conversation-container {
-    width: 100%;
     height: 35rem;
+    min-width: 30rem;
   }
 }
+
+@media (min-width: 1280px) {
+  .rw-widget-embedded .rw-conversation-container {
+    min-width: 50rem;
+  }
+}
+
+
 
 .rw-widget-embedded .rw-messages-container {
   height: 100%;
