@@ -447,23 +447,17 @@
   height: 22px;
   z-index: 5;
   position: absolute;
-  right: 8px !important;
-  bottom: 20px !important;
+  right: 10px !important;
+  bottom: 23px !important;
   cursor: pointer;
   background: transparent;
 }
 
 @media (min-width: 500px) {
   .send-button {
-    right: 13px !important;
-    bottom: 24px !important;
+    right: 15px !important;
+    bottom: 20.8px !important;
     width: 24px;
     height: 24px;
-  }
-}
-
-@media (min-width: 900px) {
-  .send-button {
-    bottom: 20.8px !important;
   }
 }
