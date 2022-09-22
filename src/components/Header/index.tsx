@@ -63,7 +63,6 @@ function Header() {
           </Button>
         </div>
         <HumburgerButton
-          open={isSideNavShown}
           onClick={onClickSideMenuButtonHandler}
         />
         <Menu

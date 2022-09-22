@@ -7,6 +7,7 @@ import TargetImage from '../../../assets/target.png';
 import LogoutImage from '../../../assets/log_out.png';
 
 import './SideNav.css';
+import HumburgerButton from '../humburger-button/HumburgerButton';
 
 const SideNav = (props: any) => {
   const portalElement: any = document.getElementById('overlays');
@@ -19,6 +20,7 @@ const SideNav = (props: any) => {
         )}
       {createPortal(
         <div className={`sideNav ${props.hide ? 'hide' : ''}`}>
+          <HumburgerButton open className="close-btn" onClick={props.onClose} />
           <div className="navList">
             <section>
               <a href="">

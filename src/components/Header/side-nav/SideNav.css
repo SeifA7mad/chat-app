@@ -5,6 +5,7 @@
   background-color: white;
   width: 65%;
   height: 100vh;
+  top: 0;
   right: 0;
   animation: slide 1s forwards;
   justify-content: center;
@@ -29,6 +30,12 @@
   to {
     right: 0;
   }
+}
+
+.close-btn {
+  position: absolute;
+  top: 3rem;
+  right: 1rem;
 }
 
 .sideNav .navList {
