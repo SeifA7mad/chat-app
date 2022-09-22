@@ -241,10 +241,6 @@ html {
   font-family: 'Calistoga', cursive;
 }
 
-body {
-  overflow: hidden;
-}
-
 :root {
   font-size: 12px;
 }
