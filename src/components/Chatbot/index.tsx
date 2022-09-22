@@ -103,7 +103,7 @@ function Chatbot() {
             inputTextFieldHint={'Start typing'}
             subtitle={'A.I. self-care companion'}
           />
-          <SendButtonIcon className="send-button" />
+          {/* <SendButtonIcon className="send-button" /> */}
         </div>
       </div>
       <Button
