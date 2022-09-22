@@ -74,14 +74,14 @@
   padding-right: 2%;
   padding-top: 1.5%;
   width: 100% !important;
-  height: 62rem !important;
+  height: 61rem !important;
 }
 
 @media (min-width: 500px) {
   .rw-widget-embedded .rw-conversation-container {
     width: 100% !important;
     min-width: 35rem;
-    height: 45rem !important;
+    height: 44rem !important;
   }
 }
 @media (min-width: 900px) {
@@ -447,7 +447,7 @@
   height: 22px;
   z-index: 5;
   position: absolute;
-  right: 25px !important;
+  right: 20px !important;
   bottom: 20px !important;
   cursor: pointer;
   background: transparent;
@@ -455,7 +455,7 @@
 
 @media (min-width: 500px) {
   .send-button {
-    right: 33.6px !important;
+    right: 28px !important;
     bottom: 24px !important;
     width: 24px;
     height: 24px;
@@ -464,7 +464,6 @@
 
 @media (min-width: 900px) {
   .send-button {
-    right: 33.6px !important; 
     bottom: 20.8px !important;
   }
 }
