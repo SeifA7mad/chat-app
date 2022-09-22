@@ -99,15 +99,13 @@
   }
 }
 
-
-
 .rw-widget-embedded .rw-messages-container {
   height: 100%;
   box-shadow: 0px 12px 16px -4px rgb(16 24 40 / 8%),
     0px 4px 6px -2px rgb(16 24 40 / 3%);
   padding-top: 0;
   z-index: 1;
-  overflow-y: auto;
+  overflow-y: scroll !important;
 }
 
 .rw-widget-embedded .rw-sender {
@@ -168,9 +166,9 @@
 }
 
 .rw-conversation-container .rw-send svg {
-  padding: 0.3rem 0.1rem 0.3rem 0.3rem;
-  transform: rotate(-45deg);
-  width: 65%;
+  padding: 0.3rem 0.1rem 0.3rem 0.3rem !important;  
+  transform: rotate(-45deg) !important;
+  width: 65% !important;
 }
 
 .rw-send-icon-ready {
@@ -193,8 +191,7 @@
   text-transform: none !important;
   top: 1.5rem;
   width: 10rem !important;
-  font-weight: bold !important;
-  display: none;
+  font-weight: bold !important; 
 }
 
 @media (min-width: 500px) {
@@ -340,14 +337,14 @@
   display: none !important;
 }
 .rw-conversation-container .rw-replies {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
   column-gap: 1rem;
   row-gap: 0.2rem;
   margin: 0;
   margin-top: 1rem;
-  width: 100%;
+  width: 100% !important;
 }
 .rw-conversation-container .rw-reply {
   box-shadow: 0px 12px 16px -4px rgb(16 24 40 / 8%),
@@ -401,7 +398,7 @@
 
 .rw-group-message.rw-from-response
   .rw-message:not(:first-child):not(:only-child) {
-  width: 95%;
+  width: 95% ;
 }
 
 .rw-group-message.rw-from-response
@@ -443,7 +440,7 @@
 }*/
 
 #rw-messages > div:nth-child(7) > div {
-  margin: 0;
+  margin: 0 ;
 }
 
 .send-button {
