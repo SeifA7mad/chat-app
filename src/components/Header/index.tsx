@@ -24,7 +24,7 @@ function Header() {
 
   return (
     <>
-      <SideNav hide={!isSideNavShown} />
+      <SideNav hide={!isSideNavShown} onClose={onClickSideMenuButtonHandler} />
       <div className="chatbot-header">
         <img
           className="cb-header-logo"

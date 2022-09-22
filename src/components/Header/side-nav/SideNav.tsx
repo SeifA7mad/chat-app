@@ -10,44 +10,53 @@ import './SideNav.css';
 
 const SideNav = (props: any) => {
   const portalElement: any = document.getElementById('overlays');
-  return createPortal(
-    <div className={`sideNav ${props.hide ? 'hide' : ''}`}>
-      <div className="navList">
-        <section>
-          <a href="">
-            {' '}
-            <img src={TargetImage} /> Find & book{' '}
-          </a>
-          <a href="">
-            {' '}
-            <img src={ClandarImage} /> My sessions{' '}
-          </a>
-        </section>
-        <span className="line"></span>
-        <section>
-          <a href="">
-            {' '}
-            <img src={LayersImage} /> Terms of service{' '}
-          </a>
-          <a href="">
-            {' '}
-            <img src={LockImage} /> Privacy policy{' '}
-          </a>
-          <a href="">
-            {' '}
-            <img src={TargetImage} /> Support{' '}
-          </a>
-        </section>
-        <span className="line"></span>
-        <section>
-          <a href="">
-            {' '}
-            <img src={LogoutImage} /> Log out{' '}
-          </a>
-        </section>
-      </div>
-    </div>,
-    portalElement
+  return (
+    <>
+      {!props.hide &&
+        createPortal(
+          <div className="backdrop" onClick={props.onClose}></div>,
+          portalElement
+        )}
+      {createPortal(
+        <div className={`sideNav ${props.hide ? 'hide' : ''}`}>
+          <div className="navList">
+            <section>
+              <a href="">
+                {' '}
+                <img src={TargetImage} /> Find & book{' '}
+              </a>
+              <a href="">
+                {' '}
+                <img src={ClandarImage} /> My sessions{' '}
+              </a>
+            </section>
+            <span className="line"></span>
+            <section>
+              <a href="">
+                {' '}
+                <img src={LayersImage} /> Terms of service{' '}
+              </a>
+              <a href="">
+                {' '}
+                <img src={LockImage} /> Privacy policy{' '}
+              </a>
+              <a href="">
+                {' '}
+                <img src={TargetImage} /> Support{' '}
+              </a>
+            </section>
+            <span className="line"></span>
+            <section>
+              <a href="">
+                {' '}
+                <img src={LogoutImage} /> Log out{' '}
+              </a>
+            </section>
+          </div>
+        </div>,
+        portalElement
+      )}
+    </>
   );
 };
 
