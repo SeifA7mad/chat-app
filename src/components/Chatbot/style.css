@@ -73,14 +73,14 @@
   box-shadow: none;
   padding-right: 2%;
   padding-top: 1.5%;
-  height: 62rem;
+  height: 62rem !important;
 }
 
 @media (min-width: 500px) {
   .rw-widget-embedded .rw-conversation-container {
     width: 100%;
     min-width: 35rem;
-    height: 45rem;
+    height: 45rem !important;
   }
 }
 @media (min-width: 900px) {
@@ -88,7 +88,7 @@
     display: flex;
   }
   .rw-widget-embedded .rw-conversation-container {
-    height: 35rem;
+    height: 35rem !important;
     min-width: 30rem;
   }
 }
@@ -105,7 +105,7 @@
     0px 4px 6px -2px rgb(16 24 40 / 3%);
   padding-top: 0;
   z-index: 1;
-  overflow-y: scroll !important;
+  overflow-y: auto !important;
 }
 
 .rw-widget-embedded .rw-sender {
@@ -166,7 +166,7 @@
 }
 
 .rw-conversation-container .rw-send svg {
-  padding: 0.3rem 0.1rem 0.3rem 0.3rem !important;  
+  padding: 0.3rem 0.1rem 0.3rem 0.3rem !important;
   transform: rotate(-45deg) !important;
   width: 65% !important;
 }
@@ -191,7 +191,7 @@
   text-transform: none !important;
   top: 1.5rem;
   width: 10rem !important;
-  font-weight: bold !important; 
+  font-weight: bold !important;
 }
 
 @media (min-width: 500px) {
@@ -398,7 +398,7 @@
 
 .rw-group-message.rw-from-response
   .rw-message:not(:first-child):not(:only-child) {
-  width: 95% ;
+  width: 95%;
 }
 
 .rw-group-message.rw-from-response
@@ -440,7 +440,7 @@
 }*/
 
 #rw-messages > div:nth-child(7) > div {
-  margin: 0 ;
+  margin: 0;
 }
 
 .send-button {
