@@ -447,7 +447,7 @@
   height: 22px;
   z-index: 5;
   position: absolute;
-  right: 20px !important;
+  right: 17px !important;
   bottom: 20px !important;
   cursor: pointer;
   background: transparent;
@@ -455,7 +455,7 @@
 
 @media (min-width: 500px) {
   .send-button {
-    right: 28px !important;
+    right: 23px !important;
     bottom: 24px !important;
     width: 24px;
     height: 24px;
