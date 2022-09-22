@@ -1,6 +1,5 @@
 .Apps {
   /*background-color: blue;*/
- 
 }
 ul,
 li {
@@ -239,6 +238,10 @@ li {
 
 html {
   font-family: 'Calistoga', cursive;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 :root {
