@@ -1,0 +1,80 @@
+.book-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  box-shadow: 0px -6px 20px rgb(13 10 25 / 10%);
+  border-radius: 1rem;
+  z-index: 60;
+  margin: 0;
+  width: 30rem;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 15rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.book-modal .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.book-modal .header svg {
+  cursor: pointer;
+}
+
+.book-modal .body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.book-modal .body h1,
+p {
+  margin: 0;
+}
+
+.book-modal .body h1 {
+  font-size: 24px;
+  color: #584fff;
+  font-weight: 700;
+}
+
+.book-modal .body p {
+  font-size: 14px;
+  color: #96a3b6;
+}
+
+.book-modal .footer {
+  width: 100%;
+}
+
+.book-modal .footer button {
+  width: 100%;
+  height: 3rem;
+  border-radius: 1rem;
+  border: none;
+  color: white;
+  font-weight: 700;
+  background: linear-gradient(
+    to right,
+    rgba(87, 71, 253, 1) 0%,
+    rgba(157, 94, 239, 1) 69%,
+    rgba(157, 94, 239, 1) 100%
+  );
+  cursor: pointer;
+}

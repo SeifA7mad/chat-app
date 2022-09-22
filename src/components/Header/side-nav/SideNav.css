@@ -1,0 +1,68 @@
+.sideNav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 65%;
+  height: 100vh;
+  z-index: 10;
+  right: 0;
+  animation: slide 1s forwards;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes slide {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
+}
+
+.sideNav .navList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  height: 70%;
+  width: 100%;
+}
+
+.sideNav .navList a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.sideNav .navList a img {
+  width: 25px;
+  height: 25px;
+}
+
+.sideNav .navList section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin-left: 2rem;
+}
+
+.line {
+  width: 100%;
+  border: solid #f5f7f9 1px;
+}
+
+@media (min-width: 500px) {
+  .sideNav {
+    display: none;
+  }
+}
+
+.hide {
+  display: none;
+}
